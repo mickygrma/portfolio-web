@@ -1,0 +1,140 @@
+.row {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  padding: 40px 0;
+  margin: 30px 0;
+}
+.summary {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.experience {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.colmun {
+  width: auto;
+}
+.item {
+  margin: 0 0;
+  border-left: 2px solid #0563bb;
+  padding: 0 30px;
+  position: relative;
+}
+.item::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  border: 2px solid #0563bb;
+  background: #fff;
+}
+.item > p {
+  padding: 20px 0;
+  line-height: 25px;
+}
+.item ul {
+  margin: 20px;
+  list-style: disc;
+  padding-left: 20px;
+}
+.item ul li {
+  margin: 20px;
+}
+.item  h3 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+.item:last-child {
+  margin-bottom: 30px;
+}
+.item > h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.summary > h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+.experience > h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+.company {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.company > .logo {
+  width: 100px;
+  height: 30px;
+  object-fit: cover;
+}
+.amu{
+  width: 200px;
+  height: 60px;
+  object-fit: contain;
+}
+.item h4 {
+  font-size: 17px;
+  font-weight: 400;
+}
+.item > p,
+.item li {
+  font-weight: lighter;
+  font-size: 13px;
+}
+.bold {
+  font-size: 14px !important;
+  list-style: none !important;
+  color: #000000;
+  font-weight:500 !important; /* Add !important to override the previous style */
+}
+.experience ul {
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+  list-style-type: disc;
+}
+.experience ul li {
+  margin: 0;
+  padding: 10px 0;
+}
+.row > .column{
+  width:50%;
+}
+
+.experience ul:last-child {
+  padding: 20px 0;
+}
+@media (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
+  .row  .column{
+    width: 100%;
+  }
+}
